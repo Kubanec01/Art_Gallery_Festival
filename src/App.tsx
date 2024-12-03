@@ -1,8 +1,16 @@
+import { Footer } from "./components/footerSection/Footer";
+import { Navbar } from "./components/navbarSection/Navbar";
+import { MainRoutes } from "./routes/MainRoutes";
+
+
+
 function App() {
   return (
-    <div>
-      <h1>this is test</h1>
-    </div>
+    <>
+    {/* <Navbar /> */}
+    <MainRoutes />
+    {/* <Footer /> */}
+    </>
   );
 }
 
