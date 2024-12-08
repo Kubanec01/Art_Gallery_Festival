@@ -1,6 +1,6 @@
 
 // IMPORTS
-import heroImage from "../assets/skyAndStorm-img.webp"
+import heroImage from "../assets/angels-img2.jpg"
 
 // VARIABLES
 const heroBg = heroImage

@@ -1,4 +1,5 @@
 import { imageData } from "../../../../components/backgroundImages";
+import { CustomButton } from "../../../../components/buttons/customButton/CustomButton";
 
 export const Hero = () => {
   const images = imageData;
@@ -13,23 +14,30 @@ export const Hero = () => {
       }}
       className="w-full h-[100vh] bg-black flex justify-center items-center"
     >
-      <div className="border border-red-600 flex justify-center items-center mx-auto w-[90%] max-w-[1700px] h-[800px]">
+      <div className="flex justify-center items-center mx-auto w-[90%] max-w-[1800px] h-[800px]">
         {/* left */}
-        <div className="w-[60%] h-full border">
+        <div className="w-[60%] h-full relative">
           <h1
             style={{
-              backdropFilter: "blur(1.4px)",
+              textShadow: "2px 2px 5px rgba(0,0,0,0.3)",
             }}
-            className="text-creme uppercase w-[88%] font-bold text-9xl mt-[120px]"
+            className="text-[1.8rem] font-medium text-creme absolute left-0 top-[120px] z-50"
+          >
+            Open Your Soul At The
+          </h1>
+          <h1
+            style={{
+              textShadow: "2px 2px 5px rgba(0,0,0,0.4)",
+            }}
+            className="text-creme uppercase w-[88%] font-extrabold text-[9.4rem] mt-[110px]"
           >
             Renaissurge
           </h1>
           <p
             style={{
-              textShadow: "2px 2px 2px rgba(0,0,0,0.6)",
-              backdropFilter: "blur(1.4px)",
+              textShadow: "2px 2px 4px rgba(0,0,0,0.6)",
             }}
-            className="text-white font-sans text-2xl mt-[8px] w-[86%] tracking-wider"
+            className="text-cremeWhite uppercase font-semibold text-3xl -mt-[30px] w-[96%] tracking-wide"
           >
             Step into a world where the timeless beauty of the Renaissance meets
             the bold innovation of modern art. The 4th edition of our gallery
@@ -41,23 +49,29 @@ export const Hero = () => {
           </p>
         </div>
         {/* right */}
-        <div
-        className="border h-full w-full flex justify-center items-end"
-        >
-          <div
-          className="border w-[80%] mb-[80px]"
-          >
-            <button
-            className="font-sans text-[3.2rem] uppercase font-medium -tracking-[4.2px]"
-            >
-              Order
-            </button>
+        <div className="h-full w-full flex flex-col justify-end items-end">
+          <h1 className="text-[2.2rem] font-semibold uppercase text-white">
+            Grab your free ticket
+          </h1>
+          <h1 className="text-[2.2rem] mr-10 text-nowrap font-semibold uppercase text-white -mt-3 mb-2">
+            Or find out more about the even
+          </h1>
+          <div className="w-[86%] mb-[10px] flex justify-between">
+            <CustomButton
+              className="font-sans text-[2.6rem] border-cremeWhite border-[3px] rounded-[40px] w-[240px] h-[60px] text-cremeWhite uppercase -tracking-[4.2px]"
+              title="OꓤdƎr"
+              href="#"
+            />
+            <CustomButton
+              className="font-sans text-[2.6rem] border-cremeWhite border-[3px] rounded-[40px] w-[240px] h-[60px] text-cremeWhite uppercase -tracking-[4.2px]"
+              title="nƎws/"
+              href="#"
+            />
           </div>
         </div>
       </div>
     </div>
   );
 };
-
 
 // ! do sekcie kde sa nachadzaju buttons sa prida este nejaky text nad to aby to pekne vyplnilo priestor a mozno sa nahradi bg-image za nieco svetlejsie popripade dame bg-img tmavsi

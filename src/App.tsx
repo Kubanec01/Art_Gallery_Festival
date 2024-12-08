@@ -7,7 +7,7 @@ import { MainRoutes } from "./routes/MainRoutes";
 function App() {
   return (
     <>
-    {/* <Navbar /> */}
+    <Navbar />
     <MainRoutes />
     {/* <Footer /> */}
     </>
