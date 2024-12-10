@@ -26,7 +26,7 @@ export const Navbar = () => {
           </h1>
         </div>
         {/* RIGHT */}
-        <div className="h-full w-[30%] flex justify-start items-center">
+        <div className="h-full w-[28.6%] flex justify-start items-center">
           <ul className="flex justify-center items-center flex-row gap-20 text-white">
             <li className={link}>
               <a href="#">Art Styles</a>

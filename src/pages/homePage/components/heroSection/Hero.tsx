@@ -14,7 +14,7 @@ export const Hero = () => {
       }}
       className="w-full h-[100vh] bg-black flex justify-center items-center"
     >
-      <div className="flex justify-center items-center mx-auto w-[90%] max-w-[1800px] h-[800px]">
+      <div className="flex px-2 justify-center items-center mx-auto w-[90%] max-w-[1800px] h-[800px]">
         {/* left */}
         <div className="w-[60%] h-full relative">
           <h1

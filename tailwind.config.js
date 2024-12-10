@@ -6,6 +6,8 @@ export default {
       colors: {
         creme: "#F2E3D5",
         cremeWhite: "#fcf3ec",
+        customWhite: "#ffffffe9",
+        shadowGrey: "#ffffff78",
       },
     },
   },
