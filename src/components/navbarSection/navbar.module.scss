@@ -1,0 +1,10 @@
+.transparent{
+    background: transparent;
+    transition: all 0.1s ease;
+}
+
+.dark{
+    background: rgba(0, 0, 0, 0.627);
+    backdrop-filter: blur(2px);
+    transition: all 0.2s ease;
+}

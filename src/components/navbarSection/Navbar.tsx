@@ -1,26 +1,26 @@
-import logoimg from "../../assets/logo-img.png";
+import { useScrollPosition } from "../../hooks/useScrollPosition";
+import style from "./navbar.module.scss";
 
 export const Navbar = () => {
+  // STYLES
+  const link = "text-2xl font-medium tracking-tight";
 
-    // STYLES
-    const link = "text-2xl font-medium tracking-tight"
+  const isAtTop = useScrollPosition();
+  const navbarBg = isAtTop ? style.transparent : style.dark;
 
   return (
-    <div 
-    className="fixed w-full h-[92px] flex justify-center items-center">
+    <div
+      className={`${navbarBg} z-[10000] fixed w-full h-[92px] flex justify-center items-center`}
+    >
       {/* BODY */}
       <div
-      style={{
-        borderBottom: "2px solid rgba(255, 255, 255, 0.6)",
-      }}
-      className="w-[92%] h-full flex justify-between items-center">
+        style={{
+          borderBottom: "2px solid rgba(255, 255, 255, 0.6)",
+        }}
+        className="w-[92%] h-full flex justify-between items-center"
+      >
         {/* LEFT */}
         <div className="h-full w-[20%] flex justify-start items-center text-white">
-          {/* <img
-            className="aspect-square object-contain h-full w-[40px]"
-            src={logoimg}
-            alt=""
-          /> */}
           <h1 className="text-3xl font-medium tracking-tight ml-1">
             Renaissurge
           </h1>

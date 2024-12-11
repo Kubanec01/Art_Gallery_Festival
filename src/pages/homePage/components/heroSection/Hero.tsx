@@ -1,8 +1,10 @@
 import { imageData } from "../../../../components/backgroundImages";
 import { CustomButton } from "../../../../components/buttons/customButton/CustomButton";
+import style from "./hero.module.scss"
 
 export const Hero = () => {
   const images = imageData;
+  const buttonStyle = "font-sans text-[2.6rem] border-cremeWhite border-[3px] rounded-[40px] w-[240px] h-[60px] text-cremeWhite uppercase -tracking-[4.2px]"
 
   return (
     <div
@@ -58,12 +60,12 @@ export const Hero = () => {
           </h1>
           <div className="w-[86%] mb-[10px] flex justify-between">
             <CustomButton
-              className="font-sans text-[2.6rem] border-cremeWhite border-[3px] rounded-[40px] w-[240px] h-[60px] text-cremeWhite uppercase -tracking-[4.2px]"
+              className={`${style.orderBtn} ${buttonStyle}`}
               title="OꓤdƎr"
               href="#"
             />
             <CustomButton
-              className="font-sans text-[2.6rem] border-cremeWhite border-[3px] rounded-[40px] w-[240px] h-[60px] text-cremeWhite uppercase -tracking-[4.2px]"
+              className={`${style.newsBtn} ${buttonStyle}`}
               title="nƎws/"
               href="#"
             />
@@ -74,4 +76,3 @@ export const Hero = () => {
   );
 };
 
-// ! do sekcie kde sa nachadzaju buttons sa prida este nejaky text nad to aby to pekne vyplnilo priestor a mozno sa nahradi bg-image za nieco svetlejsie popripade dame bg-img tmavsi

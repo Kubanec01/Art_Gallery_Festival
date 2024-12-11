@@ -1,4 +1,4 @@
-import { ArtGenresIcons } from "./ArtGenreIcons";
+import { ArtGenresIcons } from "./artGenreIcons/ArtGenreIcons";
 
 export const ArtGenres = () => {
 
@@ -9,7 +9,9 @@ export const ArtGenres = () => {
       <div className="mx-2 w-[90%] h-[90%]">
         {/* TEXT */}
         <div className="w-full mt-[70px]">
-          <h1 className="text-center text-6xl text-customWhite">Expected Art Genres</h1>
+          <h1 className="text-center text-6xl text-customWhite">
+            Expected Art Genres
+            </h1>
           <p className="text-center text-2xl text-shadowGrey mt-[14px]">
             From classic to contemporary, discover <br />
             art that resonates with very soul.
@@ -17,7 +19,7 @@ export const ArtGenres = () => {
         </div>
         {/* ICONS */}
         <div
-        className="w-full mt-[80px] flex justify-center items-center gap-32"
+        className="w-full border mt-[80px] flex justify-center items-center gap-28"
         >
          < ArtGenresIcons />
         </div>
