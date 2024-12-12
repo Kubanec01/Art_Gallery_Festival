@@ -4,7 +4,7 @@ export const ArtGenres = () => {
 
 
   return (
-    <div className="w-full h-[650px] bg-[#151515] mb-[200px] flex justify-center items-center">
+    <div className="w-full h-[650px] bg-[#151515] flex justify-center items-center">
       {/* BODY */}
       <div className="mx-2 w-[90%] h-[90%]">
         {/* TEXT */}
@@ -19,7 +19,7 @@ export const ArtGenres = () => {
         </div>
         {/* ICONS */}
         <div
-        className="w-full border mt-[80px] flex justify-center items-center gap-28"
+        className="w-full mt-[80px] flex justify-center items-center gap-28"
         >
          < ArtGenresIcons />
         </div>
