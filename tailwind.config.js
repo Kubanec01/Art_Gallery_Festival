@@ -8,6 +8,7 @@ export default {
         cremeWhite: "#fcf3ec",
         customWhite: "#ffffffe9",
         shadowGrey: "#ffffff78",
+        shadowGrey300: "#ffffff78",
       },
     },
   },
