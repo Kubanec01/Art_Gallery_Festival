@@ -3,7 +3,7 @@ import { CustomButton } from "../../../../../components/buttons/customButton/Cus
 
 export const FestivalDesc = () => {
   return (
-    <div className="w-[90%] max-w-[1800px] mx-auto mt-[-60px] flex justify-between items-center">
+    <div className="max-w-[1750px] mx-auto mt-[-60px] flex justify-between items-center">
       {/* TEXT */}
       <div className="w-[30%]">
         <div className="-mt-[220px] ml-[200px]">

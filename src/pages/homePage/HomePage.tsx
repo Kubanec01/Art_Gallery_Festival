@@ -1,5 +1,7 @@
 import { ArtGenres } from "./components/artGenres/ArtGenres";
+import { ArtShowcase } from "./components/artShowcase/ArtShowcase";
 import { FestivalInfo } from "./components/festivalInfo/FestivalInfo";
+import { FestivalLogo } from "./components/festivalLogo/FestivalLogo";
 import { Hero } from "./components/heroSection/Hero";
 
 export const HomePage = () => {
@@ -8,6 +10,8 @@ export const HomePage = () => {
       <Hero />
       <ArtGenres />
       <FestivalInfo />
+      <FestivalLogo />
+      <ArtShowcase />
     </>
   );
 };

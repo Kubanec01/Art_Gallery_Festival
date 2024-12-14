@@ -1,14 +1,16 @@
-import { FestivalActivities } from "./components/FestivalActivities"
+import { FestivalActivities } from "./components/festivalActivities/FestivalActivities"
+import { FestivalBands } from "./components/festivalBands/FestivalBands"
 import { FestivalDesc } from "./components/FestivalDesc"
 
 
 export const FestivalInfo = () => {
     return (
         <div
-        className="w-full h-[1200px] overflow-hidden bg-[#151515]"
+        className="w-full overflow-hidden"
         >
             <FestivalDesc />
             <FestivalActivities />
+            <FestivalBands />
         </div>
     )
 }
