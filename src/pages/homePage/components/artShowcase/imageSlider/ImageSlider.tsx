@@ -37,7 +37,7 @@ export const ImageSlider = () => {
         ))}
       </div>
       {/* BUTTONS */}
-      <div className="fixed bottom-8 left-0 w-full flex justify-center items-center">
+      <div className="fixed opacity-0 bottom-8 left-0 w-full flex justify-center items-center">
         <div
           style={{
             backdropFilter: "blur(2px)",
