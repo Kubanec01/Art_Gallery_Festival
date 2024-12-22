@@ -1,5 +1,4 @@
 import image1 from "../../../../assets/art-bg-img.webp";
-import { CustomButton } from "../../../../components/buttons/customButton/CustomButton";
 import { ImageSlider } from "./imageSlider/ImageSlider";
 
 export const ArtShowcase = () => {
@@ -13,7 +12,7 @@ export const ArtShowcase = () => {
       }}
       className="relative w-full h-[800px] z-10"
     >
-      <span className="absolute inset-0 bg-[#000000f1] z-10" />
+      <span className="absolute inset-0 bg-[#000000d5] z-10" />
 
       <div className="z-50 mx-auto max-w-[1900px] h-full relative flex items-center justify-center">
         {/* TEXT */}

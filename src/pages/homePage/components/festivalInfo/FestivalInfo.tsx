@@ -1,6 +1,6 @@
 import { FestivalActivities } from "./components/festivalActivities/FestivalActivities"
 import { FestivalBands } from "./components/festivalBands/FestivalBands"
-import { FestivalDesc } from "./components/FestivalDesc"
+import { FestivalDesc } from "./components/festivalDesc/FestivalDesc"
 
 
 export const FestivalInfo = () => {

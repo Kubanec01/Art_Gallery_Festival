@@ -1,5 +1,6 @@
-import image1 from "../../../../../assets/bg-statue-img.png";
-import { CustomButton } from "../../../../../components/buttons/customButton/CustomButton";
+import image1 from "../../../../../../assets/bg-statue-img.png";
+import { CustomButton } from "../../../../../../components/buttons/customButton/CustomButton";
+import style from "./festivalDesc.module.scss"
 
 export const FestivalDesc = () => {
   return (
@@ -16,7 +17,7 @@ export const FestivalDesc = () => {
             special prices for a limited time. Secure yours before they're gone!
           </p>
           <CustomButton
-            className="text-cremeWhite mt-[20px] border-[2px] border-cremeWhite text-2xl tracking-tighter font-sans  w-[150px] h-[40px] rounded-[20px]"
+            className={`${style.btn1} text-cremeWhite mt-[20px] border-[2px] border-cremeWhite text-2xl tracking-tighter font-sans  w-[150px] h-[40px] rounded-[20px]`}
             title="Buy Now"
             href="#"
           />
@@ -43,7 +44,7 @@ export const FestivalDesc = () => {
             key updates about the 4th edition of the festival.
           </p>
           <CustomButton
-            className="text-cremeWhite mt-[20px] border-[2px] border-cremeWhite text-2xl tracking-tighter font-sans  w-[160px] h-[42px] rounded-[20px]"
+            className={`${style.btn2} text-cremeWhite mt-[20px] border-[2px] border-cremeWhite text-2xl tracking-tighter font-sans  w-[160px] h-[42px] rounded-[20px]`}
             title="Read More"
             href="#"
           />
@@ -53,4 +54,3 @@ export const FestivalDesc = () => {
   );
 };
 
-// ! buttons budu oranzovej farby, len treba vybrat tu spravnu farbu

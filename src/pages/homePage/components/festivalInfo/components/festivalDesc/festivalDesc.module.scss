@@ -1,0 +1,15 @@
+.btn1{
+    transition: all 0.2s ease;
+    
+    &:hover{
+        transform: translateY(-6%);
+    }
+}
+
+.btn2{
+    transition: all 0.2s ease;
+    
+    &:hover{
+        transform: translateY(-6%);
+    }
+}

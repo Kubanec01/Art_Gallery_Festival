@@ -24,7 +24,7 @@ export const ImageSlider = () => {
   };
 
   return (
-    <>
+    <div className="overflow-hidden mt-2">
       <div ref={listRef} id="list" className={style.galleryBody}>
         {data.map((i) => (
           <span key={i.id} className="h-full w-[360px] mr-[60px]">
@@ -37,27 +37,27 @@ export const ImageSlider = () => {
         ))}
       </div>
       {/* BUTTONS */}
-      <div className="fixed opacity-0 bottom-8 left-0 w-full flex justify-center items-center">
+      <div className=" bottom-8 left-0 w-full flex mt-2 items-center">
         <div
           style={{
             backdropFilter: "blur(2px)",
           }}
-          className="w-[160px] h-[54px] bg-[#4948488f] rounded-[40px] flex items-center justify-between px-4"
+          className="w-[160px] h-[54px] rounded-[40px] flex items-center justify-between px-4"
         >
           <button
             onClick={slideToLeft}
-            className={`${style.button} text-4xl text-[#ff8a30]`} // Corrected the className interpolation
+            className={`${style.button} text-4xl text-[#cf722b]`} // Corrected the className interpolation
           >
             <FaArrowAltCircleLeft />
           </button>
           <button
             onClick={slideToRight}
-            className={`${style.button} text-4xl text-[#ff8a30]`} // Corrected the className interpolation
+            className={`${style.button} text-4xl text-[#cf722b]`} // Corrected the className interpolation
           >
             <FaArrowAltCircleRight />
           </button>
         </div>
       </div>
-    </>
+    </div>
   );
 };
