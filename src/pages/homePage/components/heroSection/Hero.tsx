@@ -1,3 +1,4 @@
+import { Parallax } from "react-scroll-parallax";
 import { imageData } from "../../../../components/backgroundImages";
 import { CustomButton } from "../../../../components/buttons/customButton/CustomButton";
 import style from "./hero.module.scss"
@@ -18,7 +19,7 @@ export const Hero = () => {
     >
       <div className="flex px-2 justify-center items-center mx-auto w-[90%] max-w-[1800px] h-[800px]">
         {/* left */}
-        <div className="w-[60%] h-full relative">
+        <Parallax speed={-5} className="w-[60%] h-full relative">
           <h1
             style={{
               textShadow: "2px 2px 5px rgba(0,0,0,0.3)",
@@ -49,9 +50,9 @@ export const Hero = () => {
             yourself in a curated collection that celebrates the enduring legacy
             of Renaissance artistry, reimagined for today’s world.
           </p>
-        </div>
+        </Parallax>
         {/* right */}
-        <div className="h-full w-full flex flex-col justify-end items-end">
+        <Parallax speed={-5} className="h-full w-full flex flex-col justify-end items-end">
           <h1 className="text-[2.2rem] font-semibold uppercase text-white">
             Grab your free ticket
           </h1>
@@ -70,9 +71,8 @@ export const Hero = () => {
               href="#"
             />
           </div>
-        </div>
+        </Parallax>
       </div>
     </div>
   );
 };
-

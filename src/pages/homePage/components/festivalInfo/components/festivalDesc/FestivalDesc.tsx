@@ -1,13 +1,15 @@
+import { Parallax } from "react-scroll-parallax";
 import image1 from "../../../../../../assets/bg-statue-img.png";
 import { CustomButton } from "../../../../../../components/buttons/customButton/CustomButton";
 import style from "./festivalDesc.module.scss"
+
 
 export const FestivalDesc = () => {
   return (
     <div className="max-w-[1750px] mx-auto mt-[-60px] flex justify-between items-center">
       {/* TEXT */}
       <div className="w-[30%]">
-        <div className="-mt-[220px] ml-[200px]">
+        <Parallax speed={-10} className="-mt-[220px] ml-[200px]">
           <h1 className="text-5xl text-creme text-nowrap">
             Enter the Realm <br />
             of Creativity
@@ -21,19 +23,19 @@ export const FestivalDesc = () => {
             title="Buy Now"
             href="#"
           />
-        </div>
+        </Parallax>
       </div>
       {/* IMG */}
-      <div className="w-[40%] flex justify-center items-center">
+      <Parallax speed={20} className="w-[40%] flex justify-center items-center">
         <img
-          className="object-contain w-[680px]"
+          className="object-contain w-[680px] opacity-95"
           src={image1}
           alt="angel-img"
         />
-      </div>
+      </Parallax>
       {/* TEXT */}
       <div className="w-[30%]">
-        <div className="mt-[290px] -ml-[84px]">
+        <Parallax speed={-5} className="mt-[290px] -ml-[84px]">
           <h1 className="text-5xl text-cremeWhite text-nowrap">
             Unveiling the 4th <br />
             Edition: News & <br />
@@ -48,7 +50,7 @@ export const FestivalDesc = () => {
             title="Read More"
             href="#"
           />
-        </div>
+        </Parallax>
       </div>
     </div>
   );

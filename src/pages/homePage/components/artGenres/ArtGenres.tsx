@@ -19,9 +19,9 @@ export const ArtGenres = () => {
               once: true,
               amount: 0.1,
             }}
-            transition={{duration: 0.4}}
+            transition={{duration: 0.6}}
             variants={{
-              hidden: {opacity: 0.4, y: -10},
+              hidden: {opacity: 0.4, y: -12},
               visible: {opacity: 1, y: 0}
             }}
             className="text-center text-6xl text-customWhite"
