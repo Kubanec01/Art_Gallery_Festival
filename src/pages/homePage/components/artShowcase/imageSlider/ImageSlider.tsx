@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { artImagesData } from "../../../../../data/artImages";
 import style from "./imageSlider.module.scss";
 import { FaArrowAltCircleLeft } from "react-icons/fa";
@@ -20,8 +20,43 @@ export const ImageSlider = () => {
   const slideToLeft = () => {
     if (listRef.current) {
       listRef.current.scrollLeft -= 400;
+    } else {
+      console.error("Problem with useRef/ ImageSlider");
     }
   };
+
+  const [isAtStart, setIsAtStart] = useState(true);
+  const [isAtEnd, setIsAtEnd] = useState(false);
+
+  useEffect(() => {
+    const scrollBar = listRef.current;
+
+    const scrollWidthWatcher = () => {
+      if (scrollBar?.scrollLeft === 0) {
+        setIsAtStart(true);
+      } else {
+        setIsAtStart(false);
+      }
+
+      if (
+        scrollBar!.scrollLeft + scrollBar!.offsetWidth >=
+        scrollBar!.scrollWidth
+      ) {
+        setIsAtEnd(true);
+      } else {
+        setIsAtEnd(false);
+      }
+    };
+
+    scrollBar?.addEventListener("scroll", scrollWidthWatcher);
+
+    return () => {
+      scrollBar?.removeEventListener("scroll", scrollWidthWatcher);
+    };
+  }, [isAtStart, isAtEnd]);
+
+  const leftBtnColor = isAtStart? "text-[#cf722b73] pointer-events-none" : "text-[#cf722b]"
+  const rightBtnColor = isAtEnd? "text-[#cf722b73] pointer-events-none" : "text-[#cf722b]"
 
   return (
     <div className="overflow-hidden mt-2">
@@ -46,13 +81,13 @@ export const ImageSlider = () => {
         >
           <button
             onClick={slideToLeft}
-            className={`${style.button} text-4xl text-[#cf722b]`} // Corrected the className interpolation
+            className={`${style.button} ${leftBtnColor} text-4xl`} // Corrected the className interpolation
           >
             <FaArrowAltCircleLeft />
           </button>
           <button
             onClick={slideToRight}
-            className={`${style.button} text-4xl text-[#cf722b]`} // Corrected the className interpolation
+            className={`${style.button} ${rightBtnColor} text-4xl`} // Corrected the className interpolation
           >
             <FaArrowAltCircleRight />
           </button>

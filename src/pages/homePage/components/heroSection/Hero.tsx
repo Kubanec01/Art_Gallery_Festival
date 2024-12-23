@@ -2,8 +2,12 @@ import { Parallax } from "react-scroll-parallax";
 import { imageData } from "../../../../components/backgroundImages";
 import { CustomButton } from "../../../../components/buttons/customButton/CustomButton";
 import style from "./hero.module.scss"
+import { useTranslation } from "react-i18next";
 
 export const Hero = () => {
+
+  const {t} = useTranslation()
+
   const images = imageData;
   const buttonStyle = "font-sans text-[2.6rem] border-cremeWhite border-[3px] rounded-[40px] w-[240px] h-[60px] text-cremeWhite uppercase -tracking-[4.2px]"
 
@@ -42,22 +46,16 @@ export const Hero = () => {
             }}
             className="text-cremeWhite uppercase font-semibold text-3xl -mt-[30px] w-[96%] tracking-wide"
           >
-            Step into a world where the timeless beauty of the Renaissance meets
-            the bold innovation of modern art. The 4th edition of our gallery
-            exhibition invites you to experience masterpieces that transcend
-            eras—blending classical techniques with contemporary vision.
-            Discover the harmony between the old and the new, and immerse
-            yourself in a curated collection that celebrates the enduring legacy
-            of Renaissance artistry, reimagined for today’s world.
+            {t('hero.desc')}
           </p>
         </Parallax>
         {/* right */}
         <Parallax speed={-5} className="h-full w-full flex flex-col justify-end items-end">
           <h1 className="text-[2.2rem] font-semibold uppercase text-white">
-            Grab your free ticket
+          {t('hero.btnTitle1')}
           </h1>
           <h1 className="text-[2.2rem] mr-10 text-nowrap font-semibold uppercase text-white -mt-3 mb-2">
-            Or find out more about the even
+          {t('hero.btnTitle2')}
           </h1>
           <div className="w-[86%] mb-[10px] flex justify-between">
             <CustomButton

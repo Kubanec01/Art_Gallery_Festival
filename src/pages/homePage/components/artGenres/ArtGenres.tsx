@@ -1,9 +1,14 @@
 import { useState } from "react";
 import { ArtGenresIcons } from "./artGenreIcons/ArtGenreIcons";
 import { motion } from "framer-motion";
+import { Trans, useTranslation } from "react-i18next";
 
 export const ArtGenres = () => {
-  const [headerText, setHeaderText] = useState("Expected Art Genres");
+
+  const {t} = useTranslation()
+
+
+  const [headerText, setHeaderText] = useState(t('artGenres.title'));
 
   return (
     <div className="w-full h-[650px] bg-[#151515] flex justify-center items-center">
@@ -29,8 +34,9 @@ export const ArtGenres = () => {
             {headerText}
           </motion.h1>
           <p className="text-center text-2xl text-shadowGrey mt-[14px]">
-            From classic to contemporary, discover <br />
-            art that resonates with very soul.
+            <Trans
+            i18nKey={'artGenres.desc'}
+            />
           </p>
         </div>
         {/* ICONS */}

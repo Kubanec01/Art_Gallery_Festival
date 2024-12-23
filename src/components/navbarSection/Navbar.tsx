@@ -1,7 +1,11 @@
+import { useTranslation } from "react-i18next";
 import { useScrollPosition } from "../../hooks/useScrollPosition";
 import style from "./navbar.module.scss";
 
 export const Navbar = () => {
+
+  const {t} = useTranslation()
+
   // STYLES
   const link = "text-2xl font-medium tracking-tight";
 
@@ -29,13 +33,13 @@ export const Navbar = () => {
         <div className="h-full w-[28.6%] flex justify-start items-center">
           <ul className="flex justify-center items-center flex-row gap-20 text-white">
             <li className={link}>
-              <a href="#">Art Styles</a>
+              <a href="#">{t('navbar.artStyles')}</a>
             </li>
             <li className={link}>
-              <a href="#">Buy Tickets</a>
+              <a href="#">{t('navbar.buyTickets')}</a>
             </li>
             <li className={link}>
-              <a href="#">Art Preview</a>
+              <a href="#">{t('navbar.artPreview')}</a>
             </li>
           </ul>
         </div>

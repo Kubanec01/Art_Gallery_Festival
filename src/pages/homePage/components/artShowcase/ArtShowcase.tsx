@@ -1,7 +1,11 @@
+import { Trans, useTranslation } from "react-i18next";
 import image1 from "../../../../assets/art-bg-img.webp";
 import { ImageSlider } from "./imageSlider/ImageSlider";
 
 export const ArtShowcase = () => {
+
+  const {t} = useTranslation()
+  
   return (
     <div
       style={{
@@ -19,14 +23,12 @@ export const ArtShowcase = () => {
         <div className="w-[50%] h-full flex justify-end">
           <div className="mt-[142px] mr-[140px]">
             <h1 className="text-5xl text-cremeWhite font-medium">
-              Renowned Artists and <br />
-              Their Masterpieces
+              <Trans
+              i18nKey={'artShowCase.title'}
+              />
             </h1>
             <p className="text-2xl text-cremeWhite500 w-[460px] mt-[8px]">
-              The festival will showcase monumental works by some of the most
-              celebrated names in the art world. Experience the grandeur of
-              iconic masterpieces, each telling its own powerful story and
-              reflecting the brilliance of renowned artists.
+              {t('artShowCase.desc')}
             </p>
           </div>
         </div>
