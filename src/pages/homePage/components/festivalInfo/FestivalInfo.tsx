@@ -6,7 +6,7 @@ import { FestivalDesc } from "./components/festivalDesc/FestivalDesc"
 export const FestivalInfo = () => {
     return (
         <div
-        className="w-full overflow-hidden"
+        className="w-full mt-[180px] overflow-hidden"
         >
             <FestivalDesc />
             <FestivalActivities />

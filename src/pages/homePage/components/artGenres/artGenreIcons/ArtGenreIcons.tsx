@@ -16,9 +16,9 @@ export const ArtGenresIcons = ({setHeaderText}: ArtGenresIconsProps) => {
           onMouseEnter={() => setHeaderText(i.name)}
           onMouseLeave={() => setHeaderText("Expected Art Genres")}
             key={i.id}
-            className={`${style.iconBody} flex justify-center items-center aspect-square border-[#ffffff93] border-[3px] rounded-[80px] w-[140px]`}
+            className={`${style.iconBody} flex justify-center items-center aspect-square border-[#ffffff93] sm:border-[3px] border-[2px] rounded-[80px] xl:w-[140px] lg:w-[120px] sm:w-[100px] w-[78px]`}
           >
-            <span className="text-4xl text-[#ffffffcd]">{i.icon}</span>
+            <span className="xl:text-4xl sm:text-3xl text-xl text-[#ffffffcd]">{i.icon}</span>
           </div>
         );
       })}
