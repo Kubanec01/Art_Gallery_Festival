@@ -6,18 +6,18 @@ export const FestivalBands = () => {
   const { t } = useTranslation();
 
   return (
-    <div className="max-w-[1300px] mx-auto flex justify-end items-center mt-[140px]">
+    <div className="w-[90%] max-w-[1300px] mx-auto flex md:flex-row flex-col md:justify-end justify-center items-center lg:mt-[140px] mt-[80px]">
       {/* TEXT */}
-      <div className="mr-[50px] -mt-[20px]">
-        <h1 className="text-customWhite text-5xl font-medium">
+      <div className="md:mr-[50px] md:-mt-[20px] mt-[20px] md:w-auto w-full">
+        <h1 className="text-customWhite lg:text-5xl md:text-4xl text-3xl font-medium">
           <Trans i18nKey={"festivalInfo.bandsInfo.title"} />
         </h1>
-        <p className="text-customWhite text-lg w-[420px] mt-[10px]">
+        <p className="text-customWhite lg:text-lg lg:w-[420px] md:w-[360px] w-[90%] md:mt-[10px] mt-[6px]">
           {t("festivalInfo.bandsInfo.desc")}
         </p>
       </div>
       {/* IMG */}
-      <div className="w-[460px] h-[560px] rounded-[5px] overflow-hidden">
+      <div className="lg:w-[460px] md:w-auto w-full lg:h-[560px] md:h-[460px] h-[260px] overflow-hidden rounded-[5px] md:mt-0 mt-[20px]">
         <img
           className={`${style.img} object-cover w-full h-full`}
           src={image1}
