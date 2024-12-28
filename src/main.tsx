@@ -7,7 +7,7 @@ import "./utils/i18n.ts"
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <Router>
+    <Router basename="Art_Gallery_Festival">
       <App />
     </Router>
   </StrictMode>
