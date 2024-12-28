@@ -3,25 +3,29 @@ import { artImagesData } from "../../../../../data/artImages";
 import style from "./imageSlider.module.scss";
 import { FaArrowAltCircleLeft } from "react-icons/fa";
 import { FaArrowAltCircleRight } from "react-icons/fa";
+import { useScreenWidth } from "../../../../../hooks/useScreenWidth";
 
 export const ImageSlider = () => {
   const data = artImagesData;
+  const screenWidth = useScreenWidth();
+
+  console.log(screenWidth);
 
   const listRef = useRef<HTMLDivElement>(null);
 
   const slideToRight = () => {
-    if (listRef.current) {
+    if (listRef.current && screenWidth > 786) {
       listRef.current.scrollLeft += 400;
-    } else {
-      console.error("Problem with useRef/ ImageSlider");
+    } else if (listRef.current && screenWidth < 786) {
+      listRef.current.scrollLeft += 300;
     }
   };
 
   const slideToLeft = () => {
-    if (listRef.current) {
+    if (listRef.current && screenWidth > 786) {
       listRef.current.scrollLeft -= 400;
-    } else {
-      console.error("Problem with useRef/ ImageSlider");
+    } else if (listRef.current && screenWidth < 786) {
+      listRef.current.scrollLeft -= 310;
     }
   };
 
@@ -55,24 +59,28 @@ export const ImageSlider = () => {
     };
   }, [isAtStart, isAtEnd]);
 
-  const leftBtnColor = isAtStart? "text-[#cf722b73] pointer-events-none" : "text-[#cf722b]"
-  const rightBtnColor = isAtEnd? "text-[#cf722b73] pointer-events-none" : "text-[#cf722b]"
+  const leftBtnColor = isAtStart
+    ? "text-[#cf722b73] pointer-events-none"
+    : "text-[#cf722b]";
+  const rightBtnColor = isAtEnd
+    ? "text-[#cf722b73] pointer-events-none"
+    : "text-[#cf722b]";
 
   return (
     <div className="overflow-hidden mt-2">
       <div ref={listRef} id="list" className={style.galleryBody}>
         {data.map((i) => (
-          <span key={i.id} className="h-full w-[360px] mr-[60px]">
+          <span key={i.id} className="h-full md:w-[360px] w-[240px] mr-[60px]">
             <img
               className="object-cover w-full h-full rounded-[10px]"
               src={i.image}
-              alt={`${i.image} img`} // Corrected the alt text interpolation
+              alt={`${i.image} img`}
             />
           </span>
         ))}
       </div>
       {/* BUTTONS */}
-      <div className=" bottom-8 left-0 w-full flex mt-2 items-center">
+      <div className="bottom-8 left-0 w-full flex mt-2 items-center">
         <div
           style={{
             backdropFilter: "blur(2px)",

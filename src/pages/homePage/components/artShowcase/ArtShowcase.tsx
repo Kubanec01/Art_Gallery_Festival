@@ -14,26 +14,26 @@ export const ArtShowcase = () => {
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
-      className="relative w-full h-[800px] z-10"
+      className="relative w-full lg:h-[800px] z-10"
     >
       <span className="absolute inset-0 bg-[#000000e4] z-10" />
 
-      <div className="z-50 mx-auto max-w-[1900px] h-full relative flex items-center justify-center">
+      <div className="z-50 mx-auto w-full max-w-[1900px] h-full relative flex lg:flex-row flex-col  items-center justify-center">
         {/* TEXT */}
-        <div className="w-[50%] h-full flex justify-end">
-          <div className="mt-[142px] mr-[140px]">
-            <h1 className="text-5xl text-cremeWhite font-medium">
+        <div className="xl:w-[50%] lg:w-[55%] w-[90%] h-full lg:flex justify-end">
+          <div className="lg:mt-[142px] md:mt-[80px] mt-[40px] xl:mr-[140px] lg:mr-[40px]">
+            <h1 className="md:text-5xl text-3xl lg:text-left text-center text-cremeWhite md:font-medium">
               <Trans
               i18nKey={'artShowCase.title'}
               />
             </h1>
-            <p className="text-2xl text-cremeWhite500 w-[460px] mt-[8px]">
+            <p className="lg:text-2xl md:text-xl text-cremeWhite500 lg:w-[460px] md:w-[74%] w-[94%] lg:mt-[8px] mt-[10px] lg:text-left text-center mx-auto">
               {t('artShowCase.desc')}
             </p>
           </div>
         </div>
         {/* IMGS */}
-        <div className="w-[50%] h-full flex justify-start items-center">
+        <div className="xl:w-[50%] lg:w-[45%] md:w-[700px] w-[300px] lg:ml-0 md:ml-[300px] ml-[40px] h-full lg:mt-0 mt-[40px] lg:mb-0 mb-[60px] lg:flex justify-start items-center">
           <ImageSlider />
         </div>
       </div>
