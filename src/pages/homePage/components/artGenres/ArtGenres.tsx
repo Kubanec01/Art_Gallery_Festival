@@ -11,7 +11,12 @@ export const ArtGenres = () => {
   const [headerText, setHeaderText] = useState(t('artGenres.title'));
 
   return (
-    <div className="w-full bg-[#151515] flex justify-center items-center xl:mb-0 lg:-mb-[70px] -mb-[120px]">
+    <div
+    id="art-styles"
+    style={{
+      scrollMargin: "200px"
+    }}
+    className="w-full bg-[#151515] flex justify-center items-center xl:mb-0 lg:-mb-[70px] -mb-[120px]">
       {/* BODY */}
       <div className="mx-2 w-[90%] h-[90%]">
         {/* TEXT */}

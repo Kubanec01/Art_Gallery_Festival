@@ -33,13 +33,13 @@ export const Navbar = () => {
         <div className="h-full mr-1 flex sm:justify-start sm:w-auto w-full justify-center items-center">
           <ul className="flex justify-center items-center flex-row lg:gap-20 md:gap-12 gap-8 text-white">
             <li className={link}>
-              <a href="#">{t('navbar.artStyles')}</a>
+              <a href="#art-styles">{t('navbar.artStyles')}</a>
             </li>
             <li className={link}>
-              <a href="#">{t('navbar.buyTickets')}</a>
+              <a href="#festival-info">{t('navbar.buyTickets')}</a>
             </li>
             <li className={link}>
-              <a href="#">{t('navbar.artPreview')}</a>
+              <a href="#art-preview">{t('navbar.artPreview')}</a>
             </li>
           </ul>
         </div>

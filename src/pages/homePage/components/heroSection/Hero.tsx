@@ -1,5 +1,5 @@
 import { Parallax } from "react-scroll-parallax";
-import { imageData } from "../../../../components/backgroundImages";
+import { imagesData } from "../../../../data/mediaAssets";
 import { CustomButton } from "../../../../components/buttons/customButton/CustomButton";
 import style from "./hero.module.scss";
 import { useTranslation } from "react-i18next";
@@ -7,14 +7,14 @@ import { useTranslation } from "react-i18next";
 export const Hero = () => {
   const { t } = useTranslation();
 
-  const images = imageData;
+  const bgImage = imagesData.heroBg;
   const buttonStyle =
     "font-sans 2xl:text-[2.6rem] md:text-[2rem] text-[1.6rem] border-cremeWhite md:border-[3px] border-[2px] rounded-[40px] 2xl:w-[240px] md:w-[210px] w-[140px] 2xl:h-[60px] md:h-[50px] h-[40px] text-cremeWhite uppercase -tracking-[4.2px]";
 
   return (
     <div
       style={{
-        backgroundImage: `url(${images.heroBg})`,
+        backgroundImage: `url(${bgImage})`,
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
         backgroundPosition: "center",

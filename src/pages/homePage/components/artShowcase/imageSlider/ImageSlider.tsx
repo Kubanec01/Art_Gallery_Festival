@@ -12,7 +12,7 @@ export const ImageSlider = () => {
   const listRef = useRef<HTMLDivElement>(null);
 
   const slideToRight = () => {
-    if (listRef.current && screenWidth > 786) {
+    if (listRef.current && screenWidth >= 786) {
       listRef.current.scrollLeft += 400;
     } else if (listRef.current && screenWidth < 786) {
       listRef.current.scrollLeft += 300;
@@ -20,10 +20,10 @@ export const ImageSlider = () => {
   };
 
   const slideToLeft = () => {
-    if (listRef.current && screenWidth > 786) {
+    if (listRef.current && screenWidth >= 786) {
       listRef.current.scrollLeft -= 400;
     } else if (listRef.current && screenWidth < 786) {
-      listRef.current.scrollLeft -= 310;
+      listRef.current.scrollLeft -= 300;
     }
   };
 

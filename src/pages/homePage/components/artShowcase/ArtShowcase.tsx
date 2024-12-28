@@ -1,22 +1,27 @@
 import { Trans, useTranslation } from "react-i18next";
-import image1 from "../../../../assets/art-bg-img.webp";
 import { ImageSlider } from "./imageSlider/ImageSlider";
+import { imagesData } from "../../../../data/mediaAssets";
+
 
 export const ArtShowcase = () => {
+
+  const bgImage = imagesData.artShowcaseBg
 
   const {t} = useTranslation()
   
   return (
     <div
+    id="art-preview"
       style={{
-        backgroundImage: `url(${image1})`,
+        backgroundImage: `url(${bgImage})`,
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
         backgroundPosition: "center",
+        scrollMargin: "100px"
       }}
       className="relative w-full lg:h-[800px] z-10"
     >
-      <span className="absolute inset-0 bg-[#000000e4] z-10" />
+      <span className="absolute inset-0 bg-[#000000e9] z-10" />
 
       <div className="z-50 mx-auto w-full max-w-[1900px] h-full relative flex lg:flex-row flex-col  items-center justify-center">
         {/* TEXT */}
