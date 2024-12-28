@@ -1,6 +1,6 @@
 import imageSkullWoman from "../assets/skull-woman-art-img.webp"
 import imageSkull from "../assets/skull-art-img.webp"
-import imageSciFi from "../assets/scifi-art-img.webp"
+import imageSciFi from "../assets/sciFi-art-img.webp"
 import imageGoya from "../assets/goya-art-img.jpg"
 
 
