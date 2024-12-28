@@ -12,13 +12,13 @@ export const Footer = () => {
             <h1 className="text-customWhite lg:text-2xl text-xl">
               {t("footer.disclaimer.title")}
             </h1>
-            <p className="text-shadowGrey mt-[2px] lg:text-wrap">
+            <p className="text-shadowGrey mt-[2px] lg:text-wrap lg:w-full w-[90%]">
               {t("footer.disclaimer.desc")}
             </p>
           </div>
         </div>
         {/* PRODUCTS */}
-        <div className="w-[25%] h-full flex justify-center items-center">
+        <div className="w-[25%] h-full flex lg:justify-center items-center">
           <div className="md:mb-[42px] mb-[20px] lg:mr-10">
             <h1 className="text-customWhite lg:text-2xl text-xl text-start">
             {t("footer.products.title")}

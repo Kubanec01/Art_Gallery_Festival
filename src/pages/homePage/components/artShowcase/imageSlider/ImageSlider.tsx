@@ -9,8 +9,6 @@ export const ImageSlider = () => {
   const data = artImagesData;
   const screenWidth = useScreenWidth();
 
-  console.log(screenWidth);
-
   const listRef = useRef<HTMLDivElement>(null);
 
   const slideToRight = () => {

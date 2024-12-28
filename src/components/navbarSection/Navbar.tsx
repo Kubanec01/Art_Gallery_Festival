@@ -7,14 +7,14 @@ export const Navbar = () => {
   const {t} = useTranslation()
 
   // STYLES
-  const link = "lg:text-2xl text-xl font-medium tracking-tight text-nowrap";
+  const link = "lg:text-2xl md:text-xl text-lg font-medium tracking-tight text-nowrap";
 
   const isAtTop = useScrollPosition();
   const navbarBg = isAtTop ? style.transparent : style.dark;
 
   return (
     <div
-      className={`${navbarBg} z-[10000] fixed w-full h-[92px] flex justify-center items-center`}
+      className={`${navbarBg} z-[10000] fixed w-full md:h-[92px] h-[72px] flex justify-center items-center`}
     >
       {/* BODY */}
       <div
@@ -31,7 +31,7 @@ export const Navbar = () => {
         </div>
         {/* RIGHT */}
         <div className="h-full mr-1 flex sm:justify-start sm:w-auto w-full justify-center items-center">
-          <ul className="flex justify-center items-center flex-row lg:gap-20 md:gap-12 sm:gap-8 gap-12 text-white">
+          <ul className="flex justify-center items-center flex-row lg:gap-20 md:gap-12 gap-8 text-white">
             <li className={link}>
               <a href="#">{t('navbar.artStyles')}</a>
             </li>
