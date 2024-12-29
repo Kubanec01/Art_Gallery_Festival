@@ -23,7 +23,7 @@ export const Hero = () => {
     >
       <div className="mx-auto w-full max-w-[1720px]">
         {/* left */}
-        <Parallax speed={-5} className="h-full md:mt-0 mt-[60px]">
+        <div className="h-full md:mt-0 mt-[60px] relative">
           <h1
             style={{
               textShadow: "2px 2px 5px rgba(0,0,0,0.3)",
@@ -48,7 +48,7 @@ export const Hero = () => {
           >
             {t("hero.desc")}
           </p>
-        </Parallax>
+        </div>
         {/* right */}
         <div className="h-full w-full flex flex-col 2xl:mt-0 xl:mt-8 mt-24 justify-end items-end">
           <h1 className="2xl:text-[2.2rem] lg:text-[2rem] md:text-[1.8rem] text-[1.3rem] font-semibold uppercase text-white">
