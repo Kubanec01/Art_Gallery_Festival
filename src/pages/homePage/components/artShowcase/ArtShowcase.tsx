@@ -27,12 +27,12 @@ export const ArtShowcase = () => {
         {/* TEXT */}
         <div className="xl:w-[50%] lg:w-[55%] w-[90%] h-full lg:flex justify-end">
           <div className="lg:mt-[142px] md:mt-[80px] mt-[40px] xl:mr-[140px] lg:mr-[40px]">
-            <h1 className="md:text-5xl text-3xl lg:text-left text-center text-cremeWhite md:font-medium">
+            <h1 className="md:text-5xl text-2xl lg:text-left text-center text-cremeWhite md:font-medium">
               <Trans
               i18nKey={'artShowCase.title'}
               />
             </h1>
-            <p className="lg:text-2xl md:text-xl text-cremeWhite500 lg:w-[460px] md:w-[74%] w-[94%] lg:mt-[8px] mt-[10px] lg:text-left text-center mx-auto">
+            <p className="lg:text-2xl md:text-xl text-cremeWhite500 lg:w-[460px] md:w-[74%] w-full lg:mt-[8px] mt-[10px] lg:text-left text-center mx-auto">
               {t('artShowCase.desc')}
             </p>
           </div>

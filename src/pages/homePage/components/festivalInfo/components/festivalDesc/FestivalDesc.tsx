@@ -22,7 +22,7 @@ export const FestivalDesc = () => {
           <h1 className="2xl:text-5xl md:text-4xl text-3xl text-creme z-20 relative text-nowrap">
             <Trans i18nKey={"festivalDesc.ticketsSection.title"} />
           </h1>
-          <p className="2xl:w-[380px] w-[320px] mt-[8px] 2xl:text-2xl md:text-xl text-lg text-shadowGrey300">
+          <p className="2xl:w-[380px] md:w-[320px] w-[280px] mt-[8px] 2xl:text-2xl md:text-xl text-lg text-shadowGrey300">
             {t("festivalDesc.ticketsSection.desc")}
           </p>
           <CustomButton
@@ -54,7 +54,7 @@ export const FestivalDesc = () => {
           <h1 className="2xl:text-5xl md:text-4xl text-3xl text-cremeWhite z-20 relative text-nowrap">
             <Trans i18nKey={"festivalDesc.infoSection.title"} />
           </h1>
-          <p className="2xl:w-[330px] w-[300px] mt-[8px] 2xl:text-2xl md:text-xl text-lg text-shadowGrey300">
+          <p className="2xl:w-[330px] md:w-[300px] w-[280px] mt-[8px] 2xl:text-2xl md:text-xl text-lg text-shadowGrey300">
             {t("festivalDesc.infoSection.desc")}
           </p>
           <CustomButton

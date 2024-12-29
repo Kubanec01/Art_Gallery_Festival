@@ -46,7 +46,7 @@ export const Footer = () => {
           </div>
         </div>
         {/* GMAIL */}
-        <div className="lg:w-[35%] md:w-[50%] w-[90%] lg:mt-0 mt-[20px] h-full flex justify-start items-center">
+        <div className="lg:w-[35%] md:w-[50%] w-[96%] lg:mt-0 mt-[20px] h-full flex justify-start items-center">
           <div className="w-full mb-[60px]">
             <h1 className="text-customWhite md:text-xl text-lg">
               <Trans
@@ -58,7 +58,7 @@ export const Footer = () => {
                 style={{
                   borderRadius: "10px 0 0 10px",
                 }}
-                className="xl:w-[34%] md:w-[44%] w-[52%] bg-[#f6562e] text-lg font-medium font-sans"
+                className="xl:w-[34%] md:w-[44%] w-[64%] bg-[#f6562e] text-lg font-medium font-sans"
               >
                 {t('footer.email.btnText')}
               </button>

@@ -19,12 +19,12 @@ export const FestivalActivities = () => {
       </div>
       {/* TEXT */}
       <div className="md:ml-[50px] md:-mt-[20px] mt-[20px] md:w-auto w-full">
-        <h1 className="text-customWhite lg:text-5xl md:text-4xl text-3xl font-medium">
+        <h1 className="text-customWhite lg:text-5xl md:text-4xl text-2xl font-medium text-nowrap">
           <Trans
           i18nKey={'festivalInfo.activitiesInfo.title'}
           />
         </h1>
-        <p className="text-customWhite lg:text-lg lg:w-[420px] md:w-[360px] w-[90%] md:mt-[10px] mt-[6px]">
+        <p className="text-customWhite lg:text-lg lg:w-[420px] md:w-[360px] w-[95%] md:mt-[10px] mt-[6px]">
           {t('festivalInfo.activitiesInfo.desc')}
         </p>
       </div>

@@ -9,10 +9,10 @@ export const FestivalBands = () => {
     <div className="w-[90%] max-w-[1300px] mx-auto flex md:flex-row flex-col md:justify-end justify-center items-center lg:mt-[140px] mt-[80px]">
       {/* TEXT */}
       <div className="md:mr-[50px] md:-mt-[20px] mt-[20px] md:w-auto w-full">
-        <h1 className="text-customWhite lg:text-5xl md:text-4xl text-3xl font-medium">
+        <h1 className="text-customWhite lg:text-5xl md:text-4xl text-2xl font-medium">
           <Trans i18nKey={"festivalInfo.bandsInfo.title"} />
         </h1>
-        <p className="text-customWhite lg:text-lg lg:w-[420px] md:w-[360px] w-[90%] md:mt-[10px] mt-[6px]">
+        <p className="text-customWhite lg:text-lg lg:w-[420px] md:w-[360px] w-[95%] md:mt-[10px] mt-[6px]">
           {t("festivalInfo.bandsInfo.desc")}
         </p>
       </div>

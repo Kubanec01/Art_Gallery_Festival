@@ -34,11 +34,11 @@ export const ArtGenres = () => {
               hidden: {opacity: 0.4, y: -12},
               visible: {opacity: 1, y: 0}
             }}
-            className="text-center lg:text-6xl md:text-5xl text-3xl text-customWhite"
+            className="text-center lg:text-6xl md:text-5xl text-3xl text-nowrap text-customWhite"
           >
             {headerText}
           </motion.h1>
-          <p className="text-center lg:text-2xl md:text-xl text-lg text-shadowGrey md:mt-[14px] mt-[2px]">
+          <p className="text-center lg:text-2xl md:text-xl text-shadowGrey md:mt-[14px] mt-[2px]">
             <Trans
             i18nKey={'artGenres.desc'}
             />

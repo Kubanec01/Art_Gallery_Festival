@@ -7,7 +7,7 @@ export const FestivalInfo = () => {
     return (
         <div
         id="festival-info"
-        className="w-full mt-[180px] overflow-hidden"
+        className="w-full md:mt-[180px] mt-[220px] overflow-hidden"
         >
             <FestivalDesc />
             <FestivalActivities />
