@@ -18,7 +18,7 @@ export const Hero = () => {
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
-      className="w-full lg:px-10 px-2 min-h-[100vh] relative bg-black flex justify-center items-center overflow-hidden"
+      className="w-full lg:px-10 px-2 h-auto min-h-[100vh] relative bg-black flex justify-center items-center overflow-hidden"
     >
       <div className="mx-auto w-full max-w-[1720px]">
         {/* left */}
@@ -49,7 +49,7 @@ export const Hero = () => {
           </p>
         </div>
         {/* right */}
-        <div className="h-full w-full flex flex-col 2xl:mt-0 xl:mt-8 mt-24 justify-end items-end">
+        <div className="h-full w-full flex flex-col 2xl:mt-0 xl:mt-8 mt-24 md:mb-0 mb-[20px] justify-end items-end">
           <h1 className="2xl:text-[2.2rem] lg:text-[2rem] md:text-[1.8rem] text-[1.3rem] font-semibold uppercase text-white">
             {t("hero.btnTitle1")}
           </h1>
