@@ -1,4 +1,3 @@
-import { Parallax } from "react-scroll-parallax";
 import { imagesData } from "../../../../data/mediaAssets";
 import { CustomButton } from "../../../../components/buttons/customButton/CustomButton";
 import style from "./hero.module.scss";
@@ -19,7 +18,7 @@ export const Hero = () => {
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
-      className="w-full lg:px-10 px-2 h-[100vh] bg-black flex justify-center items-center"
+      className="w-full lg:px-10 px-2 min-h-[100vh] relative bg-black flex justify-center items-center overflow-hidden"
     >
       <div className="mx-auto w-full max-w-[1720px]">
         {/* left */}

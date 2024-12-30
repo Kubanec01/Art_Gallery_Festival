@@ -31,7 +31,7 @@ export const Navbar = () => {
         </div>
         {/* RIGHT */}
         <div className="h-full mr-1 flex sm:justify-start sm:w-auto w-full justify-center items-center">
-          <ul className="flex justify-center items-center flex-row lg:gap-20 md:gap-12 gap-8 text-white">
+          <ul className="flex justify-center items-center flex-row lg:gap-20 md:gap-12 gap-6 text-white">
             <li className={link}>
               <a href="#art-styles">{t('navbar.artStyles')}</a>
             </li>
