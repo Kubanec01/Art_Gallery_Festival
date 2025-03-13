@@ -5,7 +5,7 @@
 ![screenshot](./src/assets/app-screenshot2-img.png)
 ---
 ![screenshot](./src/assets/app-screenshot3-img.png)
-.
+---
 A simple webpage serving as an invitation to an art festival featuring diverse art galleries and live music. This mini-project primarily focuses on the visual aspect, experimenting with various UI elements, blending multiple artistic styles, and incorporating smooth animations and Parallax effects for an engaging and captivating experience.
 
 
