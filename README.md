@@ -18,7 +18,6 @@ A simple webpage serving as an invitation to an art festival featuring diverse a
 - React + Vite
 - TypeScript
 - Tailwind CSS
-- Framer Motion
 
 
 ## 🔧 Installation
